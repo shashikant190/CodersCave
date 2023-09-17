@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; 
+   
+
+}
+
+
+.container {
+    background-color: white;
+    box-shadow: 0 0 15px purple;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    max-width: 400px;
+    padding: 20px;
+}
+
+
+#expression {
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-top: 0; 
+    margin-bottom: 20px; 
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 15px;
+    background-color: orangered; 
+}
+
+.percentage-button {
+   
+    width: 20%;
+    height: -1%;
+    color: white;
+
+}
+
+
+.division-button {
+
+    width: 20%;
+    height: -1%;
+    color: white; 
+
+}
+
+
+.custom-calculate-button {
+    
+    width: 40%;
+    height: -1%;
+    color: white; 
+}
+
+
+button[type="submit"], button[type="button"] {
+    background-color: rgb(3, 176, 245); 
+}
+
+button:hover {
+    background-color: orangered; 
+}
+
+
+
