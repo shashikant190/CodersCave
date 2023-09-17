@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/styles.css') }}">
+    <script src="{{ url_for('static', filename='/main.js') }}"></script>
+</head>
+<body>
+    <h1>Random Password Generator</h1>
+    <form method="POST">
+        <div class="form-row">
+            <label for="password_length">Password Length (6-25):</label>
+            <input type="number" id="password_length" name="password_length" min="6" max="25" required>
+        </div>
+        <div class="form-row">
+            <label>Include Numbers:</label>
+            <input type="checkbox" id="include_numbers" name="include_numbers">
+        </div>
+        <div class="form-row">
+            <label>Include Lowercase Characters:</label>
+            <input type="checkbox" id="include_lowercase" name="include_lowercase">
+        </div>
+        <div class="form-row">
+            <label>Include Uppercase Characters:</label>
+            <input type="checkbox" id="include_uppercase" name="include_uppercase">
+        </div>
+        <div class="form-row">
+            <label>Include Symbols:</label>
+            <input type="checkbox" id="include_symbols" name="include_symbols">
+        </div>
+        <div class="form-row">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+        </div>
+        <div class="form-row">
+            <button type="submit">Generate Passwords</button>
+        </div>
+    </form>
+
+    <div id="passwords">
+        {% if passwords %}
+            {% for password in passwords %}
+            <div class="password-card">
+                <p class="password">{{ password }}</p>
+                <button onclick="copyPassword('{{ password }}')">Copy</button>
+            </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</body>
+</html>

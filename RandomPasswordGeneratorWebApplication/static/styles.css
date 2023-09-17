@@ -1,0 +1,79 @@
+
+body {
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+form {
+    background-color: white;
+    border: 1px solid purple;
+    box-shadow: 0px 0px 5px 0px grey;
+    max-width: 400px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    border-radius: 25px;
+}
+
+
+.form-row {
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.form-row label {
+    margin-right: 10px;
+    flex: 1;
+}
+
+
+button[type="submit"] {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: lightskyblue;
+}
+
+#passwords {
+    max-width: 400px;
+    width: 80%;
+}
+
+.password-card {
+    background-color: white;
+    border: 1px solid purple;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 0px grey;
+    align-items: center;
+}
+
+.password-card button {
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.password-card button:hover {
+    background-color: orangered;
+}
